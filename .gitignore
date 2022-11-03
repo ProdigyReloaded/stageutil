@@ -31,7 +31,6 @@ stageutil
 *.DAT
 *.dat
 .idea
-config
 out
 projectFilesBackup
 tmp*

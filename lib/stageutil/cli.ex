@@ -28,7 +28,7 @@ defmodule StageUtil.CLI do
     script = :escript.script_name()
 
     IO.puts("""
-      StageUtil - a utility for manipulating Prodigy Object Caches
+      StageUtil - A utility for manipulating STAGE.DAT files for the Prodigy Reception System
 
       Usage:
 
@@ -40,10 +40,6 @@ defmodule StageUtil.CLI do
         --glob <pattern>   - only apply to objects whose name matches the
                              glob pattern <pattern>.
                              Defaults to *
-
-        --type N           - only apply to objects of type N, can be specified
-                             multiple times.
-                             Defaults to all.
 
       Sources and Targets:
 
@@ -106,8 +102,7 @@ defmodule StageUtil.CLI do
           help: :boolean,
           dest: :string,
           glob: :string,
-          recurse: :boolean,
-          type: :keep
+          recurse: :boolean
         ]
       )
 
